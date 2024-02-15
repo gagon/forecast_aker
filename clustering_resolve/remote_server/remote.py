@@ -6,6 +6,8 @@ import subprocess
 app = FastAPI()
 
 resolve_file="test_resolve.rsl"
+ip_address="127.0.0.1"
+port=3000
 
 
 @app.get("/open_resolve")
@@ -95,4 +97,4 @@ def get_forecast_data():
 
 
 if __name__ == "__main__":
-    uvicorn.run("remote:app", host="127.0.0.1", port=3000, reload=True)
+    uvicorn.run("remote:app", host=ip_address, port=port, reload=True)
