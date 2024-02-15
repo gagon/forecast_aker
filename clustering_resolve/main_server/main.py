@@ -19,6 +19,12 @@ TEMPLATES = Jinja2Templates(directory="templates")
 
 resolve_folder=Path.joinpath(BASE_PATH,"resolve_models")
 
+remote_ip_address="127.0.0.1"
+remote_port=3000
+
+main_ip_address="127.0.0.1"
+main_port=8000
+
 
 def load_json():
     f = open('data.json')
@@ -129,7 +135,7 @@ async def server_run_page(request: Request, id):
     
     data=load_json()
    
-    fire_and_forget("http://127.0.0.1:3000/run")
+    fire_and_forget("http://"+remote_ip_address+":"+str(remote_port)+"/run")
 
     data["remote_servers"][int(id)]["status"]="running"
     data["remote_servers"][int(id)]["data"]["forecast_data"]["show"]=0
@@ -153,7 +159,7 @@ def server_status_page(request: Request, id):
     
     data=load_json()
    
-    result = requests.get("http://127.0.0.1:3000/check_status")
+    result = requests.get("http://"+remote_ip_address+":"+str(remote_port)+"/check_status")
     status=result.json()["status"]
 
     data["remote_servers"][int(id)]["status"]=status
@@ -177,7 +183,7 @@ def get_forecast_data_page(request: Request, id):
     
     data=load_json()
    
-    forecast_data = requests.get("http://127.0.0.1:3000/get_forecast_data").json()
+    forecast_data = requests.get("http://"+remote_ip_address+":"+str(remote_port)+"/get_forecast_data").json()
 
     data["remote_servers"][int(id)]["data"]["forecast_data"]["results"]=forecast_data["results"]    
     data["remote_servers"][int(id)]["data"]["forecast_data"]["show"]=1
@@ -196,4 +202,4 @@ def get_forecast_data_page(request: Request, id):
 
 
 if __name__ == "__main__":
-    uvicorn.run("main:app", host="127.0.0.1", port=8000, reload=True)
+    uvicorn.run("main:app", host=main_ip_address, port=main_port, reload=True)
