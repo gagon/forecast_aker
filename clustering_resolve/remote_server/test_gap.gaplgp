@@ -1,0 +1,182 @@
+#SIG	Gap log file
+#VSN	1
+16384	01/01/2024
+1	Initialising system
+1	Loading Tank 'T1'
+1	Loading Tank 'T10'
+1	Loading Tank 'T2'
+1	Loading Tank 'T3'
+1	Loading Tank 'T4'
+1	Loading Tank 'T5'
+1	Loading Tank 'T6'
+1	Loading Tank 'T7'
+1	Loading Tank 'T8'
+1	Loading Tank 'T9'
+1	 
+1	Start of Prediction Step 1, Date 01/01/2024
+1	Solver solution reached in 16 iterations
+1	Max. Pressure Drop Difference 0.000437686 bar
+1	Max. Mass Balance Difference 7.013045e-5 tonne/day
+1	End of Prediction Step 1, Date 01/01/2024
+1	 
+16384	01/02/2024
+1	Start of Prediction Step 2, Date 01/02/2024
+1	Solver solution reached in 14 iterations
+1	Max. Pressure Drop Difference 0.000462279 bar
+1	Max. Mass Balance Difference 7.677245e-5 tonne/day
+1	End of Prediction Step 2, Date 01/02/2024
+1	 
+16384	01/03/2024
+1	Start of Prediction Step 3, Date 01/03/2024
+1	Solver solution reached in 13 iterations
+1	Max. Pressure Drop Difference 4.775242e-5 bar
+1	Max. Mass Balance Difference 5.205066e-5 tonne/day
+1	End of Prediction Step 3, Date 01/03/2024
+1	 
+16384	01/04/2024
+1	Start of Prediction Step 4, Date 01/04/2024
+1	Solver solution reached in 11 iterations
+1	Max. Pressure Drop Difference 0.000386212 bar
+1	Max. Mass Balance Difference 8.882023e-5 tonne/day
+1	End of Prediction Step 4, Date 01/04/2024
+1	 
+16384	01/05/2024
+1	Start of Prediction Step 5, Date 01/05/2024
+1	Solver solution reached in 10 iterations
+1	Max. Pressure Drop Difference 0.00019519 bar
+1	Max. Mass Balance Difference 8.441669e-5 tonne/day
+1	End of Prediction Step 5, Date 01/05/2024
+1	 
+16384	01/06/2024
+1	Start of Prediction Step 6, Date 01/06/2024
+1	Solver solution reached in 9 iterations
+1	Max. Pressure Drop Difference 8.450756e-5 bar
+1	Max. Mass Balance Difference 8.27814e-5 tonne/day
+1	End of Prediction Step 6, Date 01/06/2024
+1	 
+16384	01/07/2024
+1	Start of Prediction Step 7, Date 01/07/2024
+1	Solver solution reached in 8 iterations
+1	Max. Pressure Drop Difference 9.656927e-5 bar
+1	Max. Mass Balance Difference 9.494653e-5 tonne/day
+1	End of Prediction Step 7, Date 01/07/2024
+1	 
+16384	01/08/2024
+1	Start of Prediction Step 8, Date 01/08/2024
+1	Solver solution reached in 7 iterations
+1	Max. Pressure Drop Difference 0.000170285 bar
+1	Max. Mass Balance Difference 0.000114841 tonne/day
+1	End of Prediction Step 8, Date 01/08/2024
+1	 
+16384	01/09/2024
+1	Start of Prediction Step 9, Date 01/09/2024
+1	Solver solution reached in 6 iterations
+1	Max. Pressure Drop Difference 0.000321002 bar
+1	Max. Mass Balance Difference 0.000135215 tonne/day
+1	End of Prediction Step 9, Date 01/09/2024
+1	 
+16384	01/10/2024
+1	Start of Prediction Step 10, Date 01/10/2024
+1	Solver solution reached in 5 iterations
+1	Max. Pressure Drop Difference 0.000555212 bar
+1	Max. Mass Balance Difference 0.000137336 tonne/day
+1	End of Prediction Step 10, Date 01/10/2024
+1	 
+16384	01/11/2024
+1	Start of Prediction Step 11, Date 01/11/2024
+1	Solver solution reached in 5 iterations
+1	Max. Pressure Drop Difference 0.000124351 bar
+1	Max. Mass Balance Difference 0.000150894 tonne/day
+1	End of Prediction Step 11, Date 01/11/2024
+1	 
+16384	01/12/2024
+1	Start of Prediction Step 12, Date 01/12/2024
+1	Solver solution reached in 4 iterations
+1	Max. Pressure Drop Difference 0.000464021 bar
+1	Max. Mass Balance Difference 0.000150585 tonne/day
+1	End of Prediction Step 12, Date 01/12/2024
+1	 
+16384	01/01/2025
+1	Start of Prediction Step 13, Date 01/01/2025
+1	Solver solution reached in 4 iterations
+1	Max. Pressure Drop Difference 0.000125585 bar
+1	Max. Mass Balance Difference 0.000179191 tonne/day
+1	End of Prediction Step 13, Date 01/01/2025
+1	 
+16384	01/02/2025
+1	Start of Prediction Step 14, Date 01/02/2025
+1	Solver solution reached in 3 iterations
+1	Max. Pressure Drop Difference 0.000539307 bar
+1	Max. Mass Balance Difference 0.000127387 tonne/day
+1	End of Prediction Step 14, Date 01/02/2025
+1	 
+16384	01/03/2025
+1	Start of Prediction Step 15, Date 01/03/2025
+1	Solver solution reached in 3 iterations
+1	Max. Pressure Drop Difference 0.000301454 bar
+1	Max. Mass Balance Difference 0.000178732 tonne/day
+1	End of Prediction Step 15, Date 01/03/2025
+1	 
+16384	01/04/2025
+1	Start of Prediction Step 16, Date 01/04/2025
+1	Solver solution reached in 3 iterations
+1	Max. Pressure Drop Difference 6.53769e-5 bar
+1	Max. Mass Balance Difference 0.000219358 tonne/day
+1	End of Prediction Step 16, Date 01/04/2025
+1	 
+16384	01/05/2025
+1	Start of Prediction Step 17, Date 01/05/2025
+1	Solver solution reached in 2 iterations
+1	Max. Pressure Drop Difference 0.000584111 bar
+1	Max. Mass Balance Difference 4.500971e-5 tonne/day
+1	Differences within tolerance
+1	End of Prediction Step 17, Date 01/05/2025
+1	 
+16384	01/06/2025
+1	Start of Prediction Step 18, Date 01/06/2025
+1	Solver solution reached in 2 iterations
+1	Max. Pressure Drop Difference 0.000402715 bar
+1	Max. Mass Balance Difference 0.000111451 tonne/day
+1	End of Prediction Step 18, Date 01/06/2025
+1	 
+16384	01/07/2025
+1	Start of Prediction Step 19, Date 01/07/2025
+1	Solver solution reached in 2 iterations
+1	Max. Pressure Drop Difference 0.000249649 bar
+1	Max. Mass Balance Difference 0.000172415 tonne/day
+1	End of Prediction Step 19, Date 01/07/2025
+1	 
+16384	01/08/2025
+1	Start of Prediction Step 20, Date 01/08/2025
+1	Solver solution reached in 2 iterations
+1	Max. Pressure Drop Difference 0.000111656 bar
+1	Max. Mass Balance Difference 0.000230723 tonne/day
+1	End of Prediction Step 20, Date 01/08/2025
+1	 
+16384	01/09/2025
+1	Start of Prediction Step 21, Date 01/09/2025
+1	Solver solution reached in 1 iterations
+1	Max. Pressure Drop Difference 0.000716311 bar
+1	Max. Mass Balance Difference 0.000283578 tonne/day
+1	End of Prediction Step 21, Date 01/09/2025
+1	 
+16384	01/10/2025
+1	Start of Prediction Step 22, Date 01/10/2025
+1	Solver solution reached in 1 iterations
+1	Max. Pressure Drop Difference 0.000617233 bar
+1	Max. Mass Balance Difference 0.000248851 tonne/day
+1	End of Prediction Step 22, Date 01/10/2025
+1	 
+16384	01/11/2025
+1	Start of Prediction Step 23, Date 01/11/2025
+1	Solver solution reached in 1 iterations
+1	Max. Pressure Drop Difference 0.000528708 bar
+1	Max. Mass Balance Difference 0.000216034 tonne/day
+1	End of Prediction Step 23, Date 01/11/2025
+1	 
+16384	01/12/2025
+1	Prediction finished
+1	Time taken : 5.515 secs
+1	CPU time : 5.125 secs
+1	Start of Calculation : 08:08:38 : 31 January 2024
+1	End of Calculation : 08:08:44 : 31 January 2024

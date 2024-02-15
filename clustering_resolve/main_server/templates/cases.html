@@ -1,0 +1,48 @@
+    
+{% extends 'base.html' %}
+{% block content %}
+<div class="container-fluid overflow-hidden">
+
+    <div class="row mt-3">
+        <div class="col-3">
+            <h5>Setup case</h5>
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Case name</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">                  
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Choose servers</label>
+                    {% for server in remote_servers %}
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="server{{ server.id }}">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                {{ server.url }}
+                            </label>
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Choose resolve model</label>
+                    <select class="form-select" aria-label="Default select example">
+                        {% for resolve_file in resolve_models_list %}
+                            <option value="1" id="{{ resolve_file }}">{{ resolve_file }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Choose sensitivity</label>
+                    <select class="form-select" aria-label="Default select example">
+                        {% for resolve_file in resolve_models_list %}
+                            <option value="1" id="{{ resolve_file }}">{{ resolve_file }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+    
+</div>
+{% endblock %}

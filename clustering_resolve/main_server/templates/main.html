@@ -1,0 +1,47 @@
+    
+{% extends 'base.html' %}
+{% block content %}
+<div class="container-fluid overflow-hidden">
+
+    <div class="row mt-3">
+        <div class="col-6">            
+            <h5>List of servers registered</h5>
+
+            <table class="table table-bordered">
+                <thead>
+                    <th>URL</th>
+                    <th>Last run</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </thead>
+                <tbody>
+                    
+                    {% for server in remote_servers %}
+                        <tr>
+                            <td>{{ server.url }}</td>
+                            <td>{{ server.last_run }}</td>
+                            <td>{{ server.status }}</td>
+                            <td><a href="/server/{{ server.id }}" >Select</a></td>                                        
+                        </tr>
+                    {% endfor %}
+                
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col-3">
+            <h5>List of resolve files</h5>
+
+            <ul class="list-group">
+                {% for resolve_file in resolve_models_list %}
+                    <li class="list-group-item">{{ resolve_file }}</li>        
+                {% endfor %}
+            </ul>        
+        </div>
+    </div>
+
+    
+</div>
+{% endblock %}

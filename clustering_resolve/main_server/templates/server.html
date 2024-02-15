@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container-fluid">
+
+    <div class="row mt-3">
+        <div class="col-6"> 
+            <h5>Remote server: {{ remote_server.url }}</h5>            
+            <a href='/server/{{ remote_server.id }}/check_status' class="btn btn-outline-primary" role="button">Check status</a>  
+            <p>Check status: {{ remote_server.status }}</p>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-6"> 
+            <a class="btn btn-outline-primary" href='/server/{{ remote_server.id }}/run' role="button">Run forecast</a>
+            <p>Last run: {{ remote_server.last_run }}</p>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-6"> 
+            <h5>Current forecast data</h5>
+            <a class="btn btn-outline-primary" href='/server/{{ remote_server.id }}/get_forecast_data' role="button">Get forecast results</a>            
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-6"> 
+            {% if remote_server.data.forecast_data.show==1 %}
+                <table class="table table-bordered">
+                    <thead>
+                        <th>Date</th>
+                        <th>Qoil</th>
+                        <th>Qgas</th>
+                        <th>Qwater</th>
+                    </thead>
+                    <tbody>            
+                        {% for row in remote_server.data.forecast_data.results %}
+                            <tr>
+                                <td>{{ row.date }}</td>
+                                <td>{{ row.qoil }}</td>
+                                <td>{{ row.qgas }}</td>
+                                <td>{{ row.qwater }}</td>
+                            </tr>
+                        {% endfor %}
+                    
+                    </tbody>
+                </table>
+            {% endif %}
+        </div>
+    </div>
+
+</div>
+{% endblock %}
